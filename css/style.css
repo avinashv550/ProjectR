@@ -1,0 +1,132 @@
+.title
+{
+	color: #FF6347 !important;
+	font-family: 'Pacifico', cursive;
+	animation-iteration-count: infinite;
+	animation-duration: 1000ms;
+	animation-timing-function: ease;
+}
+nav ul li
+{
+	padding-right: 6px;
+}
+nav .active
+{
+	border-left: 2px solid orange;
+}
+nav a
+{
+	letter-spacing: 2px;
+	color:white !important;
+}
+#banner
+{
+	background-image: url(../images/banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 550px;
+	width: 100%;
+}
+.dropdown .dropdown-menu
+{
+opacity: 0;
+display: block;
+transition : opacity 1000ms;
+}
+.dropdown:hover .dropdown-menu
+{
+	opacity: 1;
+}
+#banner .col
+{
+	margin-top: 150px;
+}
+#about h2::before
+{
+content: "_____ _ _ _ ";
+position: absolute;
+top: 10px;
+}
+/*Reserve*/
+#reserve,#how-we-do
+{
+	background: url(../images/reserve.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	height: 285px;
+}
+#reserve .dark-overlay,
+#how-we-do .dark-overlay
+{
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 285px;
+}
+#items img
+{
+	width: 150px;
+	height: 150px;
+}
+#items img
+{
+	animation-iteration-count: 15;
+	animation-duration: 1000ms;
+	animation-timing-function: ease;
+}
+#our-chef img
+{
+    width: 100%;height: 400px;
+}
+.c1,.c2,.c3
+{
+    position: absolute;
+    top: 0;
+    height: 401px; 
+    opacity:0;
+    background-color: rgba(40,155,181,0.9);
+    transition: all 1000ms;
+}
+.ch1:hover .c1,
+.ch2:hover .c2,
+.ch3:hover .c3
+{
+    opacity: 1;    
+}
+#Acc a
+{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 576px)
+{
+	#banner .col h1
+	{
+		margin-top: 80px;
+		font-size: 3rem !important;
+	}
+	#about h2
+	{
+		text-align: center  !important;
+	}
+	#reserve h1
+	{
+		font-size: 2rem !important;
+		margin-top: 5px !important;
+	}
+    #our-chef h1
+    {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1199px)
+{ 
+  #Acc img
+  {
+  	height: 360px!important;
+  }
+}
